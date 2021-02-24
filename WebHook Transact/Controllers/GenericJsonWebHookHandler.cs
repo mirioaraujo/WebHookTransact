@@ -17,10 +17,8 @@ namespace WebHook_Transact.Controllers
         {
             try
             {
-                // Get JSON from WebHook
                 JObject data = context.GetDataOrDefault<JObject>();
 
-                // Get the action for this WebHook coming from the action query parameter in the URI
                 string action = context.Actions.FirstOrDefault();
 
             }
